@@ -1,6 +1,6 @@
 import streamlit as st
 st.set_page_config(layout="wide", initial_sidebar_state="expanded", 
-                    page_title= "Destina Data App", page_icon=":Robot:")
+                    page_title= "Destina Data App", page_icon=":sunny:")
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
@@ -20,9 +20,9 @@ container = st.container()
 container.write("""
 Retail Analysis on inventory levels, customer behaviour and sales for 
 **Max *Liquor* Business**.""")
-url = "data/dataonline.csv"
-#img = "https://unsplash.com/photos/JCIJnIXv7SE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-img = Image.open("keg.jpg")
+url = "https://raw.githubusercontent.com/Heytec/ADS_REV_code/main/011%20lesson%20Retail%20%20analytics/dataonline.csv"
+img = "https://unsplash.com/photos/JCIJnIXv7SE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+#img = Image.open("keg.jpg")
 st.sidebar.image(img, caption="Max Liquor")
 
 data = st.sidebar.file_uploader("Upload Transactions", type=['csv', 'xlsx'])
