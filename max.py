@@ -18,9 +18,8 @@ container.title("Max Liquor Store")
 
 container = st.container()
 container.write("""
-Retail Analysis on inventory levels, customer behaviour and sales for 
-**Max *Liquor* Business**.""")
-url = "https://raw.githubusercontent.com/Heytec/ADS_REV_code/main/011%20lesson%20Retail%20%20analytics/dataonline.csv"
+Retail Analysis on inventory levels, customer behaviour and sales.""")
+url = "https://raw.githubusercontent.com/Kanka-max/ADS_REV_code/main/011%20lesson%20Retail%20%20analytics/dataonline.csv"
 img = "https://unsplash.com/photos/JCIJnIXv7SE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
 #img = Image.open("keg.jpg")
 st.sidebar.image(img, caption="Max Liquor")
