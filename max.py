@@ -55,7 +55,7 @@ menu = ['Business Selfie','Customer Segmentation','Predictive Analytics']
 with st.beta_container():
   
 #add selection box
-  selection = selectbox("Key Performance Indicator (KPI) ", menu)
+  selection = st.selectbox("Key Performance Indicator (KPI) ", menu)
 
 #add descriptive information about the general functionality of the app
 #'Retail analytics is the process of providing analytical data on inventory levels, supply chain movement, consumer demand, sales, etc. ... The analytics on demand and supply data can be used for maintaining procurement level and also for taking marketing decisions.
