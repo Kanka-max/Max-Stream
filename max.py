@@ -16,8 +16,8 @@ container = st.container()
 container.title("Max Liquor Store")
 #st.title()
 
-container = st.container()
-container.write("""
+with st.container():
+  st.write("""
 Retail Analysis on inventory levels, customer behaviour and sales.""")
 url = "https://raw.githubusercontent.com/Kanka-max/ADS_REV_code/main/011%20lesson%20Retail%20%20analytics/dataonline.csv"
 img = "https://unsplash.com/photos/JCIJnIXv7SE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
@@ -51,9 +51,10 @@ else:
     
 menu = ['Business Selfie','Customer Segmentation','Predictive Analytics']
 
-container = st.container()
+with st.container():
+  
 #add selection box
-selection = container.selectbox("Key Performance Indicator (KPI) ", menu)
+  selection = container.selectbox("Key Performance Indicator (KPI) ", menu)
 
 #add descriptive information about the general functionality of the app
 #'Retail analytics is the process of providing analytical data on inventory levels, supply chain movement, consumer demand, sales, etc. ... The analytics on demand and supply data can be used for maintaining procurement level and also for taking marketing decisions.
