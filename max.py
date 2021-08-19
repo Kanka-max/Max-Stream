@@ -12,8 +12,9 @@ import sklearn
 from sklearn.cluster import KMeans
 
 #set header
-container = st.container()
-container.title("Max Liquor Store")
+with st.container():
+  
+  st.title("Max Liquor Store")
 #st.title()
 
 with st.container():
