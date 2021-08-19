@@ -212,7 +212,7 @@ if selection == "Business Selfie":
 
         st.plotly_chart(fig, sharing="streamlit", use_container_width=True)
 
-        with st.expander("See Chart Explanation"):
+        with st.beta_expander("See Chart Explanation"):
             st.write("""
             The chart above shows the relationship between *Revenue* and *Liquor Sold* across the years 2010/2011.
             Each stacked bar represents Revenue and Liquor sold overview on a monthly basis.
@@ -229,9 +229,9 @@ if selection == "Business Selfie":
         total_annual_revenue = df_merge.Revenue.sum()
         average_annual_revenue = df_merge.Revenue.mean()
 
-        with st.expander("See Annual Revenue"):
+        with st.beta_expander("See Annual Revenue"):
             st.write(total_annual_revenue)
-        with st.expander("See Average Revenue"):
+        with st.beta_expander("See Average Revenue"):
             st.write(average_annual_revenue)
 
 if selection == "Customer Segmentation":
@@ -260,7 +260,7 @@ if selection == "Customer Segmentation":
     
     st.subheader("Customer Recency")
     #    st.table(df_recency.head())
-    with st.expander("See Recency Cluster"):
+    with st.beta_expander("See Recency Cluster"):
         st.write("""
             This segment will describe summary statistics of;
             how **recently** customers make purchase.
@@ -283,7 +283,7 @@ if selection == "Customer Segmentation":
     
     st.subheader("Frequency Of Orders")
         #st.table(df_frequency.head())
-    with st.expander("Frequency of Orders Cluster"):
+    with st.beta_expander("Frequency of Orders Cluster"):
         st.write("""
             This segement will describe summary statistics of;
             how **often** customers make purchase.
@@ -304,7 +304,7 @@ if selection == "Customer Segmentation":
 
     st.subheader("Monetary Value")
     #    st.table(df_frequency.head())
-    with st.expander("Monetary Value Cluster"):
+    with st.beta_expander("Monetary Value Cluster"):
         st.write("""
             This segement will describe summary statistics of;
             how **much** customers spend at the liquor store.
@@ -313,7 +313,7 @@ if selection == "Customer Segmentation":
 
 if selection == "Predictive Analytics":
     st.write("Nothing to predict just yet! :sunglasses:")
-    with st.expander("See Why"):
+    with st.beta_expander("See Why"):
         st.write("""
         This page will have predictions of sales using time series.
         Currently, we require sales data that spans 6months or 2 quarters.
