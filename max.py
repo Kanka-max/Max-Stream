@@ -12,12 +12,12 @@ import sklearn
 from sklearn.cluster import KMeans
 
 #set header
-with st.container():
+with st.beta_container():
   
   st.title("Max Liquor Store")
 #st.title()
 
-with st.container():
+with st.beta_container():
   st.write("""
 Retail Analysis on inventory levels, customer behaviour and sales.""")
 url = "https://raw.githubusercontent.com/Kanka-max/ADS_REV_code/main/011%20lesson%20Retail%20%20analytics/dataonline.csv"
@@ -52,7 +52,7 @@ else:
     
 menu = ['Business Selfie','Customer Segmentation','Predictive Analytics']
 
-with st.container():
+with st.beta_container():
   
 #add selection box
   selection = container.selectbox("Key Performance Indicator (KPI) ", menu)
@@ -86,7 +86,7 @@ if selection == "Business Selfie":
     #col1 = st.columns(1)
 
 
-    with st.container():
+    with st.beta_container():
         # Creating trace1
         fig = go.Figure()
 
@@ -220,7 +220,7 @@ if selection == "Business Selfie":
             """)    
 
     #col2 = st.columns(1)
-    with st.container():
+    with st.beta_container():
         st.write("**Tabular Business Snapshot**")
         #st.table(df_table.head())
         #df_merge = df_merge.set_index("InvoiceMonth", inplace=True)
@@ -320,7 +320,7 @@ if selection == "Predictive Analytics":
         A year will be *better*!
         """)
 
-with st.container():
+with st.beta_container():
 
     st.write("Data App designed by **Destina AI** :sunny:")
 
