@@ -14,7 +14,7 @@ from sklearn.cluster import KMeans
 #set header
 with st.beta_container():
   
-  st.title("Max Liquor Store")
+  st.title("Neutrinos AI Analytics")
 #st.title()
 
 with st.beta_container():
