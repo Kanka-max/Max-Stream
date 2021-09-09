@@ -1,7 +1,8 @@
-# Neutrinos ai
+# Retail Analysis Data App
 
 This demo application provides business analytics and intelligence for a sample retail store.
-    - *This data application is built by Streamlit Cloud.*
+
+*This data application is built by **Streamlit Cloud**.*
 
 #### App Functions
 - Business Selfie
