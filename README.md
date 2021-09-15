@@ -1,5 +1,9 @@
 # Jacques  Patricks Porfolio
 
+> Data scientist & Conversational AI Designer
+>
+>> *Connect with me via* [LinkedIn](https://www.linkedin.com/in/jacques-patricks-221963108) *or* [Twitter](https://www.twitter.com/jacquespatricks)
+
 
 ## Retail Analysis Data App
 
