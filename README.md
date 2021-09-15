@@ -6,6 +6,7 @@
 This demo application provides business analytics and intelligence for a sample retail store. The data stories have been visualized using **Plotly** charts. This data application is deployed on **Streamlit Cloud**.
 
 #### App Functions
+
 - Business Selfie
 - Customer Segmentation (*Using Clustering Model*)
 - Prediction on Future Sales (*Using Long-Short Term Memory Neural Network)
@@ -17,8 +18,9 @@ This demo application provides business analytics and intelligence for a sample 
 
 This demo of a hotel digital assisant is a conversational AI use case. The application is built on a **Rasa AI Open Source** Framework. It is also deployed via telegram external channel. The deployment files were hosted on an **Azure Virtual Machine**. Continuous integration and continuous deployment is facilitated by github and *Rasa X*.
 
+
 ![](/images/telegram0.jpg)
-![](/images/telegram1.jpg)
+
 
 #### App Functions
 
