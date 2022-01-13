@@ -24,7 +24,7 @@ Retail analysis on inventory levels, customer behaviour and sales.""")
 url = "https://raw.githubusercontent.com/Kanka-max/ADS_REV_code/main/011%20lesson%20Retail%20%20analytics/dataonline.csv"
 #img = "https://unsplash.com/photos/JCIJnIXv7SE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
 #img = Image.open("keg.jpg")
-st.sidebar.image("https://pin.it/6RkLHY0", caption="Savvy Tech")
+st.sidebar.image("https://pin.it/6RkLHY0", caption="Savvy Tech", width = 200)
 
 with st.beta_expander("About The Store"):
         st.write("""
@@ -116,7 +116,7 @@ if selection == "Business Selfie":
                     x = df_merge.InvoiceMonth,
                     y = df_merge.Quantity,
                     orientation = "v",
-                    name = "Sales (Liquor)",
+                    name = "Sales (Electronics)",
                     marker = dict(color = 'DarkSlateGray',
                     line = dict(color = "DarkSlateGrey")),
                     showlegend = True,
