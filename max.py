@@ -14,16 +14,23 @@ from sklearn.cluster import KMeans
 #set header
 with st.beta_container():
   
-  st.title("Neutrinos AI Analytics")
+  st.title("SAVVY TECHNOLOGIES ")
+  st.subheader("Savvy Tech is an In-Store pick-up electronics shop in Bungoma CBD.")
 #st.title()
 
 with st.beta_container():
   st.write("""
-Retail Analysis on inventory levels, customer behaviour and sales.""")
+Retail analysis on inventory levels, customer behaviour and sales.""")
 url = "https://raw.githubusercontent.com/Kanka-max/ADS_REV_code/main/011%20lesson%20Retail%20%20analytics/dataonline.csv"
 #img = "https://unsplash.com/photos/JCIJnIXv7SE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
 #img = Image.open("keg.jpg")
-st.sidebar.image("https://images.app.goo.gl/95yHvVH9GfgzEkfk8", caption="Max Liquor")
+st.sidebar.image("https://pin.it/6RkLHY0", caption="Savvy Tech")
+
+with st.beta_expander("About The Store"):
+        st.write("""
+             An accessory shop with broad spectrum of the market including Phone accesories, Compute Parts and Gaming Technology.
+            
+    #        """)
 
 data = st.sidebar.file_uploader("Upload Transactions", type=['csv', 'xlsx'])
 
@@ -183,7 +190,7 @@ if selection == "Business Selfie":
 # layout 
         
         fig.update_layout(
-            title_text = "Revenue and Liquor Sold Overview",
+            title_text = "Revenue and Electronics Sold Overview",
             title_font_size = 22,
             title_font_color = "crimson",
             title_font_family = "Gravitas One",
@@ -214,8 +221,8 @@ if selection == "Business Selfie":
 
         with st.beta_expander("See Chart Explanation"):
             st.write("""
-            The chart above shows the relationship between *Revenue* and *Liquor Sold* across the years 2010/2011.
-            Each stacked bar represents Revenue and Liquor sold overview on a monthly basis.
+            The chart above shows the relationship between *Revenue* and *Electronics Sold* across the years 2010/2011.
+            Each stacked bar represents Revenue and Electronics sold overview on a monthly basis.
             The line shows the trend of active customers.
             """)    
 
@@ -316,7 +323,7 @@ if selection == "Predictive Analytics":
     with st.beta_expander("See Why"):
         st.write("""
         This page will have predictions of sales using time series.
-        Currently, we require sales data that spans 6months or 2 quarters.
+        Currently, we require sales data that spans 3 months or 1 quarter of a fiscal year.
         A year will be *better*!
         """)
 
