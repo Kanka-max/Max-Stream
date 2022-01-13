@@ -24,7 +24,11 @@ Retail analysis on inventory levels, customer behaviour and sales.""")
 url = "https://raw.githubusercontent.com/Kanka-max/ADS_REV_code/main/011%20lesson%20Retail%20%20analytics/dataonline.csv"
 #img = "https://unsplash.com/photos/JCIJnIXv7SE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
 #img = Image.open("keg.jpg")
-st.image("https://pin.it/6RkLHY0", caption="Savvy Tech", width = 400)
+
+with st.beta_container():
+    image = Image.open('savvy.jpg')
+
+    st.image(image, caption='Savvy Tech')
 
 with st.beta_expander("About The Store"):
         st.write("""
