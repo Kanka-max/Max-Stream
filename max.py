@@ -12,10 +12,7 @@ import sklearn
 from sklearn.cluster import KMeans
 
 #set header
-with st.beta_container():
-  
-  st.title("SAVVY TECHNOLOGIES ")
-  st.subheader("Savvy Tech is an In-Store pick-up electronics shop in Bungoma CBD.")
+
 #st.title()
 
 with st.beta_container():
@@ -29,6 +26,10 @@ with st.beta_container():
     image = Image.open('savvy.jpg')
 
     st.image(image, caption='Savvy Tech')
+
+    with st.beta_container():
+
+        st.subheader("Savvy Tech is an In-Store pick-up electronics and gaming shop in Bungoma CBD.")
 
 with st.beta_expander("About The Store"):
         st.write("""
