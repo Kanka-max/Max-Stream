@@ -30,9 +30,6 @@ with st.sidebar.beta_container():
     st.image(image, caption='Savvy Tech')
 
     with st.beta_container():
-
-        st.subheader("In-Store pick-up electronics & gaming shop in Bungoma CBD.")
-    with st.beta_container():
         st.write("""
                 Retail analysis on inventory levels, customer behaviour and sales.""")
 
