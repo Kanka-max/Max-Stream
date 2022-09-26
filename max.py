@@ -19,23 +19,23 @@ from sklearn.cluster import KMeans
 url = "https://raw.githubusercontent.com/Kanka-max/ADS_REV_code/main/011%20lesson%20Retail%20%20analytics/dataonline.csv"
 #img = "https://unsplash.com/photos/JCIJnIXv7SE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
 #img = Image.open("keg.jpg")
-
-with st.beta_container():
+with st.beta_expander("About The Store"):
+        st.write("""
+             An accessory shop with broad spectrum of the market including Phone accesories, Compute Parts and Gaming Technology.
+            
+    #        """)
+with st.sidebar.beta_container():
     image = Image.open('savvy.jpg')
 
     st.image(image, caption='Savvy Tech')
 
     with st.beta_container():
 
-        st.subheader("Savvy Tech is an In-Store pick-up electronics and gaming shop in Bungoma CBD.")
+        st.subheader("In-Store pick-up electronics & gaming shop in Bungoma CBD.")
     with st.beta_container():
         st.write("""
                 Retail analysis on inventory levels, customer behaviour and sales.""")
-with st.beta_expander("About The Store"):
-        st.write("""
-             An accessory shop with broad spectrum of the market including Phone accesories, Compute Parts and Gaming Technology.
-            
-    #        """)
+
 
 data = st.sidebar.file_uploader("Upload Transactions", type=['csv', 'xlsx'])
 
