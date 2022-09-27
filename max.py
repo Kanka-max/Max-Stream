@@ -105,8 +105,8 @@ if selection == "Business Selfie":
                     y = df_merge.Revenue,
                     orientation = "v",  # type of plot like marker, line or line + markers
                     name = "Revenue",#name of the plots
-                    marker = dict(color = 'crimson',
-                    line = dict(color = "crimson")),
+                    marker = dict(color = 'rgb(124, 3, 133)',
+                    line = dict(color = "rgb(132, 48, 138)")),
                     showlegend = True,
                    
                     text= df.InvoiceYear) #The hover text (hover is curser)
@@ -119,8 +119,8 @@ if selection == "Business Selfie":
                     y = df_merge.Quantity,
                     orientation = "v",
                     name = "Sales (Electronics)",
-                    marker = dict(color = 'DarkSlateGray',
-                    line = dict(color = "DarkSlateGrey")),
+                    marker = dict(color = 'rgb(138, 64, 143)',
+                    line = dict(color = "rgb(138, 64, 143)")),
                     showlegend = True,
                     
                     text= df_merge.InvoiceYear)
@@ -194,18 +194,18 @@ if selection == "Business Selfie":
         fig.update_layout(
             title_text = "Revenue and Electronics Sold Overview",
             title_font_size = 22,
-            title_font_color = "crimson",
+            title_font_color = "rgb('124, 3, 133')",
             title_font_family = "Gravitas One",
             xaxis=dict(
             title = "Month",
             showgrid=False,
-            showline=False,
+            showline=True,
             showticklabels=False,
             zeroline=False,
         
         ),
             yaxis=dict(
-            showgrid=False,
+            showgrid=True,
             showline=False,
             showticklabels=False,
             zeroline=False,
@@ -215,7 +215,7 @@ if selection == "Business Selfie":
             plot_bgcolor='rgb(248, 248, 255)',
             margin=dict(l=120, r=10, t=140, b=80),
 
-            legend = dict(x=0, y=1.0, bgcolor = "LemonChiffon", bordercolor = "gold"),
+            legend = dict(x=0, y=1.0, bgcolor = "purple", bordercolor = "gold"),
             
     )
 
