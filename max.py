@@ -211,9 +211,9 @@ if selection == "Business Selfie":
             zeroline=False,
         ),
             barmode='group',
-            paper_bgcolor='Khaki',
-            plot_bgcolor='Khaki',
-            margin=dict(l=120, r=10, t=140, b=80),
+            paper_bgcolor='Lavender',
+            plot_bgcolor='Lavender',
+            margin=dict(l=10, r=10, t=80, b=80),
 
             legend = dict(x=0, y=1.0, bgcolor = "black", bordercolor = "gold"),
             
