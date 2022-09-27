@@ -106,7 +106,7 @@ if selection == "Business Selfie":
                     orientation = "v",  # type of plot like marker, line or line + markers
                     name = "Revenue",#name of the plots
                     marker = dict(color = 'Indigo',
-                    line = dict(color = "MediumOrchids")),
+                    line = dict(color = "MediumOrchid")),
                     showlegend = True,
                    
                     text= df.InvoiceYear) #The hover text (hover is curser)
@@ -119,8 +119,8 @@ if selection == "Business Selfie":
                     y = df_merge.Quantity,
                     orientation = "v",
                     name = "Sales (Electronics)",
-                    marker = dict(color = 'MediumOrchids',
-                    line = dict(color = "MediumOrchids")),
+                    marker = dict(color = 'MediumOrchid',
+                    line = dict(color = "MediumOrchid")),
                     showlegend = True,
                     
                     text= df_merge.InvoiceYear)
