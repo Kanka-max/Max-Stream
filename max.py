@@ -212,7 +212,7 @@ if selection == "Business Selfie":
         ),
             barmode='group',
             paper_bgcolor='rgb(248, 248, 255)',
-            plot_bgcolor='rgb(248, 248, 255)',
+            plot_bgcolor='LightSalmon',
             margin=dict(l=120, r=10, t=140, b=80),
 
             legend = dict(x=0, y=1.0, bgcolor = "black", bordercolor = "gold"),
