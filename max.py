@@ -195,7 +195,7 @@ if selection == "Business Selfie":
             title_text = "Revenue and Electronics Sold Overview",
             title_font_size = 22,
             title_font_color = "Purple",
-            title_font_family = "Courier New",
+            title_font_family = "Raleway",
             xaxis=dict(
             title = "Month",
             showgrid=False,
