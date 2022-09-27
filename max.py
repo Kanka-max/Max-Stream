@@ -206,14 +206,14 @@ if selection == "Business Selfie":
         ),
             yaxis=dict(
             showgrid=True,
-            showline=True,
+            showline=False,
             showticklabels=True,
             zeroline=False,
         ),
             barmode='group',
             paper_bgcolor='Lavender',
             plot_bgcolor='Lavender',
-            margin=dict(l=10, r=10, t=80, b=80),
+            margin=dict(l=20, r=10, t=80, b=80),
 
             legend = dict(x=0, y=1.0, bgcolor = "black", bordercolor = "gold"),
             
