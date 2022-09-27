@@ -206,8 +206,8 @@ if selection == "Business Selfie":
         ),
             yaxis=dict(
             showgrid=True,
-            showline=False,
-            showticklabels=False,
+            showline=True,
+            showticklabels=True,
             zeroline=False,
         ),
             barmode='group',
