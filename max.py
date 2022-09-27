@@ -211,7 +211,7 @@ if selection == "Business Selfie":
             zeroline=False,
         ),
             barmode='group',
-            paper_bgcolor='LightSalmon',
+            paper_bgcolor='LightCoral',
             plot_bgcolor='LightSalmon',
             margin=dict(l=120, r=10, t=140, b=80),
 
